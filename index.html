@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Kartik Shivankar — B.Tech ETC student, Python & C++ developer, ML enthusiast, and creative problem solver." />
+  <title>Kartik Shivankar | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ========== STICKY NAVBAR (HIDDEN FOR DESIGN) ========== -->
+  <nav class="navbar" id="navbar" style="display: none;">
+    <a href="#hero" class="navbar__logo" id="navbar-logo">KS</a>
+    <button class="navbar__toggle" id="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="navbar__bar"></span>
+      <span class="navbar__bar"></span>
+      <span class="navbar__bar"></span>
+    </button>
+    <ul class="navbar__menu" id="navbar-menu">
+      <li><a href="#about" class="navbar__link">About</a></li>
+      <li><a href="#skills" class="navbar__link">Skills</a></li>
+      <li><a href="#experience" class="navbar__link">Experience</a></li>
+      <li><a href="#projects" class="navbar__link">Projects</a></li>
+      <li><a href="#certifications" class="navbar__link">Achievements</a></li>
+      <li><a href="#contact" class="navbar__link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== MAIN CONTAINER ========== -->
+  <main class="main-container">
+
+    <!-- ========== HERO / INTRO CARD ========== -->
+    <section id="hero" class="hero card">
+      <div class="hero__photo-wrapper">
+        <img src="assets/photo.jpg" alt="Kartik Shivankar — profile photo" class="hero__photo" id="hero-photo"
+          width="150" height="150" />
+      </div>
+      <h1 class="hero__name" id="hero-name">KARTIK SHIVANKAR</h1>
+      <div class="hero__tagline-wrapper">
+        <div class="hero__tagline" id="hero-tagline">
+          PYTHON | C++ | ML | IoT | CAPCUT
+        </div>
+      </div>
+
+      <!-- Social Row & Resume Icon -->
+      <div class="hero__socials-container">
+        <div class="hero__socials" id="hero-socials">
+          <a href="https://www.linkedin.com/in/kartikeya-shivankar" target="_blank" rel="noopener noreferrer"
+            class="hero__social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="https://github.com/kartikeyashivankar" target="_blank" rel="noopener noreferrer"
+            class="hero__social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/kartik.jod69?igsh=MXhvaGtuejE1Ym9jZQ==" target="_blank"
+            rel="noopener noreferrer" class="hero__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg>
+          </a>
+          <a href="mailto:kartikshivankar12@gmail.com" class="hero__social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__divider"></div>
+
+      <!-- Navigation Grid Tabs -->
+      <div class="hero__nav-grid" id="hero-nav">
+        <button class="nav-pill active" data-target="about-section">ABOUT</button>
+        <button class="nav-pill" data-target="stack-section">SKILLS</button>
+        <button class="nav-pill" data-target="experience-section">EXPERIENCE</button>
+        <button class="nav-pill" data-target="projects-section">PROJECTS</button>
+        <button class="nav-pill" data-target="achievements-section">ACHIEVEMENTS</button>
+        <button class="nav-pill" data-target="contact-section">CONTACT</button>
+      </div>
+    </section>
+
+    <!-- ========== SECTIONS CONTENT WRAPPER ========== -->
+    <div class="sections-wrapper">
+
+      <!-- ABOUT Section -->
+      <section id="about-section" class="tab-content active">
+        <div class="card hero__bio-card">
+          <p class="hero__bio">
+            I'm a 3rd-year <strong>B.Tech ETC</strong> student at St. Vincent Pallotti College. I build practical
+            solutions combining <strong>electronics, software, and creativity</strong>.
+          </p>
+          <p class="hero__bio">
+            From ML models in Python to IoT prototypes with ESP32, I enjoy turning ideas into working products. Also a
+            freelance <strong>video editor</strong> using CapCut.
+          </p>
+          <div class="resume-download-wrapper">
+            <a href="assets/resume.pdf" download id="resume-download-link" class="resume-download-btn">
+              <svg class="resume-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+                <polyline points="10 9 9 9 8 9" />
+              </svg>
+              <span>view resume</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- STACK Section -->
+      <section id="stack-section" class="tab-content">
+        <h2 class="section-heading">TECH STACK</h2>
+
+        <!-- Languages -->
+        <div class="card skill-card" id="skill-card-code">
+          <div class="skill-card__header">
+            <span class="skill-card__symbol">&lt;/&gt;</span>
+            <h3 class="skill-card__title">Languages</h3>
+          </div>
+          <div class="skill-card__pills">
+            <span class="pill pill--blue">HTML</span>
+            <span class="pill pill--blue">CSS</span>
+            <span class="pill pill--blue">JavaScript</span>
+            <span class="pill pill--blue">Python</span>
+            <span class="pill pill--blue">C</span>
+            <span class="pill pill--blue">C++</span>
+          </div>
+        </div>
+
+        <!-- Libraries & Frameworks -->
+        <div class="card skill-card" id="skill-card-libs">
+          <div class="skill-card__header">
+            <svg class="heading-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path
+                d="M12 3L2 8l10 5 10-5-10-5zm0 18l-10-5v-4l10 5 10-5v4l-10 5zm0-4.5l-10-5v-1.7l10 5 10-5v1.7l-10 5z" />
+            </svg>
+            <h3 class="skill-card__title">Libraries &amp; Frameworks</h3>
+          </div>
+          <div class="skill-card__pills">
+            <span class="pill pill--violet">NumPy</span>
+            <span class="pill pill--violet">Pandas</span>
+            <span class="pill pill--violet">Matplotlib</span>
+            <span class="pill pill--violet">Scikit-learn</span>
+          </div>
+        </div>
+
+        <!-- Hardware & Embedded -->
+        <div class="card skill-card" id="skill-card-hw">
+          <div class="skill-card__header">
+            <svg class="heading-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path
+                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4 6h-2V7h-2v2H9v2h2v2h2v-2h2V9zM9 13H7v2h2v-2zm10 0h-2v2h2v-2zm-6 4H7v2h6v-2zm6 0h-2v2h2v-2z" />
+            </svg>
+            <h3 class="skill-card__title">Hardware &amp; Embedded</h3>
+          </div>
+          <div class="skill-card__pills">
+            <span class="pill pill--blue">Arduino UNO</span>
+            <span class="pill pill--blue">ESP32</span>
+            <span class="pill pill--blue">Sensors</span>
+            <span class="pill pill--blue">IoT</span>
+            <span class="pill pill--blue">Multisim</span>
+            <span class="pill pill--blue">Wokwi</span>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="card skill-card" id="skill-card-db">
+          <div class="skill-card__header">
+            <svg class="heading-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12 2C6.48 2 2 4.02 2 6.5v11c0 2.48 4.48 4.5 10 4.5s10-2.02 10-4.5v-11C22 4.02 17.52 2 12 2zm0 18c-4.42 0-8-1.57-8-3.5V14.2c1.78 1.1 4.7 1.8 8 1.8s6.22-.7 8-1.8v2.3c0 1.93-3.58 3.5-8 3.5zm0-5c-4.42 0-8-1.57-8-3.5V9.2c1.78 1.1 4.7 1.8 8 1.8s6.22-.7 8-1.8v2.3c0 1.93-3.58 3.5-8 3.5zm0-5c-4.42 0-8-1.57-8-3.5S7.58 3 12 3s8 1.57 8 3.5S16.42 10 12 10z" />
+            </svg>
+            <h3 class="skill-card__title">Database</h3>
+          </div>
+          <div class="skill-card__pills">
+            <span class="pill pill--yellow">SQL</span>
+          </div>
+        </div>
+
+        <!-- Technologies -->
+        <div class="card skill-card" id="skill-card-tech">
+          <div class="skill-card__header">
+            <svg class="heading-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M15 9H9v6h6V9zm-2 4h-2v-2h2v2zm8-2V9h-2V7c0-1.1-.9-2-2-2h-2V3h-2v2h-2V3H9v2H7c-1.1 0-2 .9-2 2v2H3v2h2v2H3v2h2v2c0 1.1.9 2 2 2h2v2h2v-2h2v2h2v-2h2c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2zm-4 6H7V7h10v10z" />
+            </svg>
+            <h3 class="skill-card__title">Technologies</h3>
+          </div>
+          <div class="skill-card__pills">
+            <span class="pill pill--violet">Machine Learning</span>
+            <span class="pill pill--rose">Data Structures &amp; Algorithms</span>
+            <span class="pill pill--green">Responsive Web Design</span>
+          </div>
+        </div>
+
+        <!-- Developer Tools -->
+        <div class="section-block" id="tools-subblock">
+          <h2 class="section-heading">DEVELOPER TOOLS</h2>
+          <div class="card tool-grid-card">
+            <div class="tool-grid">
+              <div class="tool-chip" id="tool-vscode">VS Code</div>
+              <div class="tool-chip" id="tool-antigravity">Antigravity</div>
+              <div class="tool-chip" id="tool-github">GitHub</div>
+              <div class="tool-chip" id="tool-canva">Canva</div>
+              <div class="tool-chip" id="tool-figma">Figma</div>
+              <div class="tool-chip" id="tool-msoffice">MS Office</div>
+              <div class="tool-chip" id="tool-powerbi">Power BI</div>
+              <div class="tool-chip" id="tool-tableau">Tableau</div>
+              <div class="tool-chip" id="tool-capcut">CapCut</div>
+              <div class="tool-chip" id="tool-powerpoint">PowerPoint</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE Section -->
+      <section id="experience-section" class="tab-content">
+        <h2 class="section-heading">EXPERIENCE</h2>
+
+        <div class="card exp-card" id="exp-video-editor">
+          <div class="exp-card__header-row">
+            <div class="exp-card__title-group">
+              <h3 class="exp-card__title">Freelance Video Editor</h3>
+              <div class="exp-card__badges">
+                <span class="exp-badge exp-badge--org">Self-Employed</span>
+                <span class="exp-badge exp-badge--date">2024 — Present</span>
+              </div>
+            </div>
+            <span class="exp-card__location">Remote</span>
+          </div>
+          <ul class="exp-card__list">
+            <li>Delivering professional video editing for paid client projects using <strong>CapCut</strong>.</li>
+            <li>Collaborating with clients to produce polished, engaging content across multiple platforms.</li>
+          </ul>
+        </div>
+
+        <div class="card exp-card" id="exp-tcs-genai">
+          <div class="exp-card__header-row">
+            <div class="exp-card__title-group">
+              <h3 class="exp-card__title">Generative AI Essentials</h3>
+              <div class="exp-card__badges">
+                <span class="exp-badge exp-badge--org">TCS iON</span>
+                <span class="exp-badge exp-badge--date">14 Jun 2026 — 29 Jun 2026</span>
+              </div>
+            </div>
+            <span class="exp-card__location">Online</span>
+          </div>
+          <ul class="exp-card__list">
+            <li>Completed career development course covering <strong>Foundations of AI &amp; Machine Learning</strong> and <strong>Fundamentals of Generative AI</strong>.</li>
+            <li>Gained knowledge in <strong>Prompt Engineering</strong>, In-Context Learning, and Responsible and Ethical AI frameworks.</li>
+          </ul>
+          <div class="exp-card__action">
+            <button class="cert-btn" data-cert="assets/tcs_generative_ai.jpg">view certificate</button>
+          </div>
+        </div>
+
+        <div class="card exp-card" id="exp-tcs-itprimer">
+          <div class="exp-card__header-row">
+            <div class="exp-card__title-group">
+              <h3 class="exp-card__title">IT Primer</h3>
+              <div class="exp-card__badges">
+                <span class="exp-badge exp-badge--org">TCS iON</span>
+                <span class="exp-badge exp-badge--date">15 Jun 2026 — 29 Jun 2026</span>
+              </div>
+            </div>
+            <span class="exp-card__location">Online</span>
+          </div>
+          <ul class="exp-card__list">
+            <li>Acquired foundational knowledge in <strong>IT Industry Overview</strong> and standard developer and job tools.</li>
+            <li>Studied <strong>Basics of Industry Elements</strong>, trending technologies, and career growth pathways.</li>
+          </ul>
+          <div class="exp-card__action">
+            <button class="cert-btn" data-cert="assets/tcs_it_primer.jpg">view certificate</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS Section -->
+      <section id="projects-section" class="tab-content">
+        <h2 class="section-heading">BUILD LOG</h2>
+
+        <!-- CarbonChain -->
+        <div class="card project-card" id="project-carbonchain">
+          <div class="project-card__header">
+            <div class="project-card__title-group">
+              <h3 class="project-card__title">CarbonChain</h3>
+              <div class="project-card__meta">
+                <span class="project-badge project-badge--tech">Blockchain, AI</span>
+                <span class="project-badge project-badge--year">2025</span>
+              </div>
+            </div>
+            <a href="https://github.com/kartikeyashivankar" target="_blank" rel="noopener noreferrer"
+              class="project-link-btn" aria-label="View Project">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+            </a>
+          </div>
+          <ul class="project-card__bullets">
+            <li>Blockchain carbon credit registry with AI verification and marketplace trading.</li>
+          </ul>
+        </div>
+
+        <!-- UnifiedDesk -->
+        <div class="card project-card" id="project-unifieddesk">
+          <div class="project-card__header">
+            <div class="project-card__title-group">
+              <h3 class="project-card__title">UnifiedDesk</h3>
+              <div class="project-card__meta">
+                <span class="project-badge project-badge--tech">Portal, Dashboard</span>
+                <span class="project-badge project-badge--year">2026</span>
+              </div>
+            </div>
+            <a href="https://github.com/abhijitbhukte/UnifiedServicePortal.git" target="_blank" rel="noopener noreferrer"
+              class="project-link-btn" aria-label="View Project">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+            </a>
+          </div>
+          <ul class="project-card__bullets">
+            <li>Service portal with role-based access, dashboard analytics, and request tracking.</li>
+          </ul>
+        </div>
+
+        <!-- BusMonitoring -->
+        <div class="card project-card" id="project-busmonitoring">
+          <div class="project-card__header">
+            <div class="project-card__title-group">
+              <h3 class="project-card__title">BusMonitoring</h3>
+              <div class="project-card__meta">
+                <span class="project-badge project-badge--tech">ESP32, IoT</span>
+                <span class="project-badge project-badge--year">2026</span>
+              </div>
+            </div>
+            <a href="https://github.com/kartikeyashivankar/BusCrowdDetection1.git" target="_blank" rel="noopener noreferrer"
+              class="project-link-btn" aria-label="View Project">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+            </a>
+          </div>
+          <ul class="project-card__bullets">
+            <li>ESP32 passenger counter with IR sensors, LCD display, and live dashboard.</li>
+          </ul>
+        </div>
+
+        <!-- SmartLED -->
+        <div class="card project-card" id="project-smartled">
+          <div class="project-card__header">
+            <div class="project-card__title-group">
+              <h3 class="project-card__title">SmartLED</h3>
+              <div class="project-card__meta">
+                <span class="project-badge project-badge--tech">Web, Hardware</span>
+                <span class="project-badge project-badge--year">2026</span>
+              </div>
+            </div>
+            <a href="https://github.com/kartikeyashivankar/AutomaticLEDsController.git" target="_blank" rel="noopener noreferrer"
+              class="project-link-btn" aria-label="View Project">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+            </a>
+          </div>
+          <ul class="project-card__bullets">
+            <li>Web-based remote LED controller integrated with hardware.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ACHIEVEMENTS Section -->
+      <section id="achievements-section" class="tab-content">
+        <h2 class="section-heading">CERTIFICATIONS &amp; ACHIEVEMENTS</h2>
+
+        <div class="card cert-card" id="cert-central-india-hack">
+          <div class="cert-card__head">
+            <h3 class="cert-card__title">Selected, Central India Hackathon</h3>
+            <span class="cert-card__org">SCOET</span>
+          </div>
+          <span class="cert-card__year-badge">2025</span> 
+        </div>
+
+        <div class="card cert-card" id="cert-embedded-systems">
+          <div class="cert-card__head">
+            <h3 class="cert-card__title">Embedded System Virtual Internship</h3>
+            <span class="cert-card__org">Eduskills</span>
+          </div>
+          <span class="cert-card__year-badge">2025</span>
+        </div>
+
+        <div class="card cert-card" id="cert-gdg-hack">
+          <div class="cert-card__head">
+            <h3 class="cert-card__title">Selected as top 10, Google Developer Group Hackathon</h3>
+            <span class="cert-card__org">JDCOEM</span>
+          </div>
+          <span class="cert-card__year-badge">2026</span>
+        </div>
+
+        <div class="card cert-card" id="cert-abhyudaya-hack">
+          <div class="cert-card__head">
+            <h3 class="cert-card__title">Selected as top 10, Abhyudaya Hackathon</h3>
+            <span class="cert-card__org">IIIT</span>
+          </div>
+          <span class="cert-card__year-badge">2026</span>
+        </div>
+
+        <div class="card cert-card" id="cert-cyber-security">
+          <div class="cert-card__head">
+            <h3 class="cert-card__title">Intro to Cyber Security</h3>
+            <span class="cert-card__org">Certification</span>
+          </div>
+          <span class="cert-card__year-badge">2026</span>
+        </div>
+
+        <div class="card cert-card" id="cert-python-ai">
+          <div class="cert-card__head">
+            <h3 class="cert-card__title">Python Using AI</h3>
+            <span class="cert-card__org">Certification</span>
+          </div>
+          <span class="cert-card__year-badge">2026</span>
+        </div>
+      </section>
+
+      <!-- CONTACT Section -->
+      <section id="contact-section" class="tab-content">
+        <h2 class="section-heading">CONTACT</h2>
+
+        <div class="card contact-card">
+          <p class="contact-card__text">Have a question or want to work together? Drop me a message!</p>
+
+          <div class="contact-card__socials" id="contact-socials">
+            <a href="https://github.com/kartikeyashivankar" target="_blank" rel="noopener noreferrer"
+              class="contact-card__link" id="contact-github" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/kartikeya-shivankar" target="_blank" rel="noopener noreferrer"
+              class="contact-card__link" id="contact-linkedin" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/kartik.jod69?igsh=MXhvaGtuejE1Ym9jZQ==" target="_blank"
+              rel="noopener noreferrer" class="contact-card__link" id="contact-instagram" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+            </a>
+            <a href="mailto:kartikshivankar12@gmail.com" class="contact-card__link" id="contact-email"
+              aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- ========== CERTIFICATE MODAL ========== -->
+  <div id="cert-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">X</button>
+      <h3 id="modal-title" class="modal-title" style="display:none;">Certificate</h3>
+      <img id="modal-img" src="" alt="Certificate" class="modal-img" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
